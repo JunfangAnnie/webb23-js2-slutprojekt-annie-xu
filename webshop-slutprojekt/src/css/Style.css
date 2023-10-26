@@ -1,0 +1,49 @@
+.navbar{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: green;
+}
+
+.logo{
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.nav-links{
+    padding: 1rem;
+    display: flex;
+}
+
+.nav-links ul li{
+    list-style-type: none;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+}
+
+.card{
+    width: 200px;
+    height: 320px;
+    border: 1px solid black;
+    overflow: hidden;
+    margin: 20px 10px;
+    padding: 10px;
+}
+
+.product-image{
+    width: 100%;
+    max-width: 200px;
+}
+
+.buy:hover {
+    background-color: lightgrey;
+}
