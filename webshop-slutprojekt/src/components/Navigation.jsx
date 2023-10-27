@@ -15,12 +15,12 @@ const Navigation = () => {
             <div className="nav-links">
                 <ul>
                     <li>
-                        <Link to="/">Produkter</Link>
+                        <Link className="prod-link" to="/">Produkter</Link>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <Link to="/shopping-cart">Varukorg</Link>
+                        <Link className="cart-link" to="/shopping-cart">Varukorg</Link>
                     </li>
                 </ul>
 

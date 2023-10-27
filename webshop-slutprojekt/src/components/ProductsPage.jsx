@@ -18,8 +18,8 @@ const ProductsPage = ({ productItems, handleBuyClick }) => {
           </div>
           <div className="product-price">{productItem.price} kr</div>
           <div className="product-in-stock">Lagersaldo: {productItem.stock} st</div> 
-          <div>
-            <button className="buy" onClick={() => handleBuyClick(productItem)}>Köp</button>
+          <div className="buy">
+            <button className="buy-btn" onClick={() => handleBuyClick(productItem)}>Köp</button>
           </div>
         </div>
       ))}

@@ -2,7 +2,6 @@
     position: sticky;
     top: 0;
     width: 100%;
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -11,13 +10,14 @@
 
 .logo{
     color: white;
-    padding: 1rem;
+    padding-left: 2rem;
     text-decoration: none;
 }
 
 .nav-links{
-    padding: 1rem;
+    padding-right:3rem;
     display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 .nav-links ul li{
@@ -30,10 +30,17 @@
     padding: 0.5rem;
 }
 
+.products{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
 .card{
     width: 200px;
-    height: 320px;
-    border: 1px solid black;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 10px;
     overflow: hidden;
     margin: 20px 10px;
     padding: 10px;
@@ -44,6 +51,115 @@
     max-width: 200px;
 }
 
-.buy:hover {
-    background-color: lightgrey;
+.product-price{
+    padding-bottom: 15px;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.buy{
+    padding-top: 10px;
+}
+
+.buy-btn{
+    position: relative;
+    background-color: #4CAF50;
+    border: none;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.buy-btn:after{
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.buy-btn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.shopping-cart-items{
+    text-align: center;
+}
+
+.shopping-cart-item p{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.shopping-cart-items img{
+    width: 100px;
+    padding-top: 1rem;
+}
+
+.cart-card{
+    border-bottom: 1px solid black;
+}
+
+.item-name{
+    font-weight: bold;
+}
+
+.total-price{
+    font-size: 2rem;
+}
+
+.product-in-stock{
+    font-size: 0.8rem;
+}
+
+.purchase-btn{
+    margin: 1rem;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.purchase-btn:hover{
+    background-color: green;
+}
+
+.empty-btn{
+    margin: 1rem;
+    background-color: #ff4242;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.empty-btn:hover{
+    background-color: red;
+}
+
+.thank-you{
+    text-align: center;
+    padding-top: 5rem;
 }
